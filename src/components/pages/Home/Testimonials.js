@@ -7,29 +7,29 @@ import TestimonialCard from './TestimonialCard';
 
 const customers = [
   {
-    fullName: 'Maria Sanchez',
+    fullName: 'Samuel A.',
+    image: customer3Image,
+    rating: [1, 1, 1, 1, 1],
+    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  },
+  {
+    fullName: 'Abel C.',
+    image: customer4Image,
+    rating: [1, 1, 1, 1, 0.5],
+    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  },
+  {
+    fullName: 'Selam T.',
     image: customer1Image,
     rating: [1, 1, 1, 1, 0.5],
     says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
       eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
   },
   {
-    fullName: 'Antony Clifton',
+    fullName: 'Eve T.',
     image: customer2Image,
-    rating: [1, 1, 1, 1, 1],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-  },
-  {
-    fullName: 'Tamika Jackson',
-    image: customer3Image,
-    rating: [1, 1, 1, 1, 0.5],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-  },
-  {
-    fullName: 'Brandon Ming',
-    image: customer4Image,
     rating: [1, 1, 1, 1],
     says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
       eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
@@ -40,7 +40,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <div className="container grid">
-        <h2>What people say about us!</h2>
+        <h2>Testimonials!</h2>
         {customers.map((customer, index) => 
           <TestimonialCard key={index} customer={customer} />
         )}
